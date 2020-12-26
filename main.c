@@ -20,7 +20,7 @@ int main()
     int ObvX=x, ObvXs, ObvY=y-1, ObvYs;
     char Overworld[50][150];
 
-    ptr_file =fopen("C:/Users/alvar/OneDrive/Escritorio/Drogas/New/Terracraft_Editor/mapa1.txt","r");   //Choosen path to open the file
+    ptr_file =fopen("C:/Users/mapa1.txt","r");   //Choosen path to open the file
     if (!ptr_file)
         return 1;
 
