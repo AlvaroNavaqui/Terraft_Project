@@ -39,10 +39,10 @@ int main (void)
     for(i=0 ; i<50 ; i++)
         for(j=0; j<150 ; j++)
             overworld[i][j]=' ';
-
+    
+    ShowWindow(GetConsoleWindow(), SW_SHOWMAXIMIZED);	//maximice window
+    
     char Wall = 'X', Nun = 32, Tree= 'T', Ore= 'o', House='A', Edit, input;
-
-    ShowWindow(GetConsoleWindow(), SW_SHOWMAXIMIZED);	//maximiza la ventana
 
     while(input!='x')
     {
