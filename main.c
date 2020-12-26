@@ -25,23 +25,16 @@ int main()
         return 1;
 
     while (fgets(buf,1000, ptr_file)!=NULL) //Loads Map in Overworld[][].
-    {
+    {                                       
 
         for(int j=0 ; j<150 ; j++)
             Overworld[i][j]=buf[j];
         i++;                                //......
     }
-    for (i=0 ; i<50 ; i++)                  //Prints Map from Overworld[][].
-    {
-        for (int j=0 ; j <150 ; j++)
-        {
-            printf("%c",Overworld[i][j]);
-        }
-        printf("\n");
-    }                                       //......
 
     gotoxy(0,0);
     printmap(Overworld);
+    
     while(Input!='x')             //Main Loop, while X isnt the Input.
     {
 
@@ -104,15 +97,6 @@ int main()
             gotoxy(ObvX,ObvY);
             printf(".");
         }
-
-
-        /*
-        if(GetAsyncKeyState(VK_SPACE) & 0x80000000)
-        {
-            Overworld[y][x]=Edit;
-            printf("%c", Edit);
-        }
-        */
     }
     fclose(ptr_file);
     return 0;
