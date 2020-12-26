@@ -15,8 +15,8 @@ int main (void)
     int i,j;
     char overworld[50][150];
 
-    for (i = 0 ; i < 50 ; i++)      //This part of the code will draw the edges within to draw
-    {
+    for (i = 0 ; i < 50 ; i++)            //This part of the code will draw the edges within to draw
+    {                                    //
         for (j = 0; j < 150 ; j++)
         {
             if (((i==0) || (i==50-1)) && (j<150))
@@ -31,12 +31,12 @@ int main (void)
             {
                 printf(" ");
             }
-        }
-        printf("\n");
+        }                           //
+        printf("\n");              //[...]
     }
 
 
-    for(i=0 ; i<50 ; i++)
+    for(i=0 ; i<50 ; i++)        //This is used in order to fill whole .txt with blank spaces (ascii 32) before overwritting it with the map itself.
         for(j=0; j<150 ; j++)
             overworld[i][j]=' ';
     
