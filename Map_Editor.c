@@ -15,7 +15,7 @@ int main (void)
     int i,j;
     char overworld[50][150];
 
-    for (i = 0 ; i < 50 ; i++)
+    for (i = 0 ; i < 50 ; i++)      //This part of the code will draw the edges within to draw
     {
         for (j = 0; j < 150 ; j++)
         {
